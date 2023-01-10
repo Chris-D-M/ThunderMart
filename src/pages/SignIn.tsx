@@ -26,7 +26,7 @@ const SignIn = ({navigation}: SignInScreenProps) => {
 
   const toSignUp = useCallback(() => {
     navigation.navigate('SignUp');
-  }, []);
+  }, [navigation]);
 
   const onChangeEmail = useCallback((text: string) => {
     setEmail(text);
